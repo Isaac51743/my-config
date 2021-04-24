@@ -1,0 +1,15 @@
+server:
+  port: 3721
+
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/Isaac51743/my-config.git
+          search-paths: config-test1
+          username: Isaac51743
+          password: ZhaoYueHang66
+      label: main
